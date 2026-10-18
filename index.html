@@ -3,75 +3,80 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dynamic Glyph — the Glyph sequence, in view while you draw</title>
-<meta name="description" content="Dynamic Glyph watches your iPhone screen during an Ingress Glyph hack and keeps the sequence in a floating window and the Dynamic Island. Everything stays on your phone.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0e13'/%3E%3Cpath d='M16 6l8 5v10l-8 5-8-5V11z' fill='none' stroke='%237b5cff' stroke-width='2'/%3E%3C/svg%3E">
+<title>Dynamic Glyph</title>
+<meta name="description" content="Dynamic Glyph reads a Glyph hack from your own iPhone screen and keeps the sequence in view while you draw. Everything stays on your phone.">
+<meta property="og:title" content="Dynamic Glyph">
+<meta property="og:description" content="The Glyph sequence, in view while you draw.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0e13'/%3E%3Cpath d='M16 6l8 5v10l-8 5-8-5V11z' fill='none' stroke='%238b78ff' stroke-width='2'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
-<main class="wrap">
+<div class="page">
 
-  <header class="hero">
-    <p class="eyebrow">Dynamic Glyph</p>
-    <h1>The Glyph sequence, in view while you draw.</h1>
-    <p class="lede">Dynamic Glyph reads the hack from your own screen and keeps the shapes in front of you — in a floating window over the game, and in the Dynamic Island. Recognition runs on the iPhone. Nothing is uploaded.</p>
-    <ul class="strip" aria-hidden="true">
-      <li class="slot done"></li>
-      <li class="slot done"></li>
-      <li class="slot now"></li>
-      <li class="slot"></li>
-      <li class="slot"></li>
-    </ul>
+  <header class="masthead">
+    <div class="mark">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4l10.4 6v12L16 28 5.6 22V10z" fill="none" stroke="#8b78ff" stroke-width="2.5" stroke-linejoin="round"/></svg>
+    </div>
+    <div>
+      <h1>Dynamic Glyph <span>for Ingress</span></h1>
+      <p>The Glyph sequence, in view while you draw</p>
+      <p class="store">Coming soon to the App Store</p>
+    </div>
   </header>
 
-  <section>
-    <h2>What it does</h2>
-    <div class="points">
-      <div>
-        <h3>The sequence, as it appears</h3>
-        <p>A floating window stays on top of the game and shows the whole sequence, with the shape to draw now outlined.</p>
-      </div>
-      <div>
-        <h3>In the Dynamic Island</h3>
-        <p>The Glyph to draw now and the one after it, on the Island and the Lock Screen.</p>
-      </div>
-      <div>
-        <h3>Every hack counted</h3>
-        <p>Results and the items each hack drops are kept in Statistics, with charts and a CSV export.</p>
-      </div>
-      <div>
-        <h3>Nothing leaves the phone</h3>
-        <p>No account, no server, no analytics. Reading the screen happens on the device, and the recording indicator stays visible throughout.</p>
-      </div>
-    </div>
-  </section>
+  <main>
 
-  <section>
-    <h2>Before you install it</h2>
-    <div class="notice">
+    <section class="card">
+      <h2>The sequence, as the game shows it</h2>
+      <p>A floating window stays on top of the game while you play. It shows the whole sequence, with the shape to draw now outlined, and it never covers the row the app reads from.</p>
+    </section>
+
+    <section class="card">
+      <h2>In the Dynamic Island</h2>
+      <p>The Glyph to draw now and the one after it, on the Island and on the Lock Screen, so you can keep your thumb where it is.</p>
+    </section>
+
+    <section class="card">
+      <h2>Every hack counted</h2>
+      <p>Each hack's result and the gear it dropped are kept in Statistics, with charts by day, by hack length and by command, and a CSV export when you want the raw numbers.</p>
+    </section>
+
+    <section class="card">
+      <h2>Nothing leaves your phone</h2>
+      <p>No account, no server, no analytics: the app has no networking code at all. Reading the screen happens on the iPhone, with the system recording indicator visible throughout. Syncing your results through your own private iCloud is optional and off until you turn it on.</p>
+    </section>
+
+    <section class="card warn">
+      <h2>Before you install it</h2>
       <p>Dynamic Glyph is unofficial software, made by a player, with no connection to Niantic Spatial, who run Ingress. Their <a href="https://www.nianticspatial.com/en/guidelines">Player Guidelines</a> list “using modified or unofficial software” as cheating. This app does not modify the game and never talks to it: it reads your own screen, on your own phone. The guidelines draw no line between software that changes the game and software that helps you play it.</p>
       <p><strong>A violation can lead to a warning, degraded gameplay, suspension or permanent termination, sometimes without warning, and can reach every Niantic Spatial product. That risk is yours.</strong></p>
       <p>Read the <a href="https://www.nianticspatial.com/en/guidelines">Player Guidelines</a> and the <a href="https://nianticspatial.com/terms">Terms of Service</a>.</p>
-    </div>
-  </section>
+    </section>
 
-  <section class="download">
-    <h2>Get it</h2>
-    <p>Coming soon to the App Store.</p>
-    <p class="req">iPhone, iOS 18 or later. Ingress is a separate app and is not included. Glyph mode needs a Glyph list file of your own; counting gear drops does not.</p>
-  </section>
+    <section class="card">
+      <h2>What you need</h2>
+      <ul>
+        <li>An iPhone running iOS 18 or later.</li>
+        <li>Ingress, installed and signed in. It is a separate app and is not included.</li>
+        <li>For Glyph mode, your own Glyph list file. Counting gear needs no file.</li>
+      </ul>
+    </section>
 
-</main>
+  </main>
 
-<footer class="wrap">
-  <ul>
-    <li><a href="support/">Support</a></li>
-    <li><a href="privacy/">Privacy</a></li>
-    <li><a href="https://github.com/szres/DynamicGlyph">Source on GitHub</a></li>
-  </ul>
-  <p>© 2026 Lizi Luo. Not affiliated with Niantic Spatial or Ingress.</p>
-</footer>
+  <footer>
+    <ul>
+      <li><a href="support/">Support</a></li>
+      <li><a href="privacy/">Privacy</a></li>
+      <li><a href="https://github.com/szres/DynamicGlyph">GitHub</a></li>
+    </ul>
+    <p>© 2026 LIZI LUO. All rights reserved.</p>
+    <p class="legal">This app is not affiliated with or endorsed by Niantic Spatial, Inc. Ingress is a trademark of Niantic Spatial, Inc.</p>
+  </footer>
+
+</div>
 
 </body>
 </html>

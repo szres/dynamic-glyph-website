@@ -169,6 +169,73 @@ footer li a { color: var(--muted); text-decoration: underline; }
 footer p { margin: 0 0 0.5rem; }
 footer .legal { opacity: 0.75; max-width: 46ch; margin: 0 auto; }
 
+
+/* Feature rows, as on vrbb.szres.org: screenshot beside a white panel,
+   alternating sides on wide screens, a swipeable row on phones. */
+
+.features {
+  margin: 0 -1rem 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.features::-webkit-scrollbar { display: none; }
+
+.feature-track { display: flex; }
+
+.feature {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.25rem 1rem 0;
+}
+
+.shot {
+  display: block;
+  width: 60%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 20px 30px -10px rgba(17, 24, 39, 0.25);
+  background: #fff;
+}
+.shot img { display: block; width: 100%; height: auto; }
+
+.feature-text { padding: 1.25rem 0.25rem 0; }
+.feature-text h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.6rem;
+}
+.feature-text p { color: var(--muted); margin: 0; }
+
+@media (min-width: 40rem) {
+  .features { margin: 0 0 1.5rem; overflow: visible; }
+  .feature-track { flex-direction: column; }
+  .feature {
+    flex-direction: row;
+    padding: 0;
+    margin-top: -2.5rem;
+  }
+  .feature:first-child { margin-top: 0; }
+  .feature:nth-child(odd) { flex-direction: row-reverse; }
+  .shot { width: 25%; flex: none; position: relative; z-index: 1; }
+  .feature-text {
+    flex: 1;
+    background: var(--card);
+    padding: 2rem 2.25rem;
+    box-shadow: var(--shadow);
+  }
+  .feature:nth-child(odd) .feature-text { border-radius: var(--radius) 0 0 var(--radius); }
+  .feature:nth-child(even) .feature-text { border-radius: 0 var(--radius) var(--radius) 0; }
+  .feature-text h2 { font-size: 1.5rem; }
+}
+
+.mark img { width: 100%; height: 100%; border-radius: inherit; display: block; }
+
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }

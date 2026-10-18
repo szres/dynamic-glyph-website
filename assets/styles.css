@@ -227,6 +227,13 @@ footer .legal { opacity: 0.75; max-width: 46ch; margin: 0 auto; }
 }
 
 
+/* Language switcher */
+
+footer .langs { margin: 0 0 1rem; }
+footer .langs li { margin: 0 0.5rem; }
+footer .langs a { text-decoration: none; color: var(--muted); }
+footer .langs span { color: var(--text); font-weight: 650; }
+
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }

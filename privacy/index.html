@@ -7,6 +7,13 @@
 <meta name="description" content="Dynamic Glyph collects no data. What it reads and what it keeps stay on your iPhone, with optional sync to your own private iCloud.">
 <link rel="icon" type="image/png" href="../assets/favicon.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<!-- alt:start -->
+<link rel="alternate" hreflang="en" href="https://glyph.szres.org/privacy/">
+<link rel="alternate" hreflang="ja" href="https://glyph.szres.org/ja/privacy/">
+<link rel="alternate" hreflang="zh-Hans" href="https://glyph.szres.org/zh-hans/privacy/">
+<link rel="alternate" hreflang="zh-Hant" href="https://glyph.szres.org/zh-hant/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://glyph.szres.org/privacy/">
+<!-- alt:end -->
 <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
@@ -29,7 +36,7 @@
       <p>Dynamic Glyph collects nothing. The app has no server, no account and no analytics. Screen processing happens on your iPhone, and the app opens no network connection of its own. The one exception is optional iCloud sync, off until you turn it on, which sends saved results and gear readings to your private iCloud.</p>
 
       <h3>1. What the app reads and keeps</h3>
-      <p>While it is running, the app reads your screen through iOS screen sharing, which you start yourself and which keeps the system recording indicator visible the whole time. Frames are examined in memory and thrown away. Nothing is recorded unless one of these is on:</p>
+      <p>While it is running, the app reads your screen through iOS screen sharing, which you start yourself and which keeps the system recording indicator visible the whole time. Frames are examined in memory and discarded after processing. Saving results, panel pictures, session logs or screenshots depends on the options below. If you turn on saving a recording to Photos before a session, the app also saves a screen video to Photos; it may show anything visible on your screen, including the game map.</p>
       <ul>
         <li><strong>Hack results and gear readings</strong>, saved on the phone: the Glyphs and bonuses the game showed, which Glyphs it accepted, timings, portal level and faction, the items read from each drop, and a note of the app version, capture mode, game language and your time zone offset. No portal names, player names, addresses or location are stored in these records.</li>
         <li><strong>Pictures of the game's item panels</strong>, saved on the phone with each gear reading. You can switch this off in the result options.</li>
@@ -42,13 +49,13 @@
       <p>Only what you asked for: recognising the hack as it happens, showing the sequence in the floating window and the Dynamic Island, counting what each hack dropped, and showing your own history in Statistics. Recognition runs entirely on the iPhone, using Apple's on-device tools. There is no profiling, no advertising and no tracking of any kind.</p>
 
       <h3>3. Who else sees it</h3>
-      <p>Nobody. Your data is not sent to the developer, and the app contains no analytics tools, crash reporters, advertising networks or third-party kits.</p>
-      <p>One option moves data off the phone, and it is off until you turn it on: iCloud sync, in the Statistics options. With it on, your saved results and gear readings sync through your own private iCloud database to your other iPhones signed in to the same Apple Account. That database is yours; the developer cannot read it. Pictures of the screen and of item panels are never synced. Apple's handling of iCloud is covered by Apple's own privacy policy.</p>
-      <p>Anything else leaves the phone only when you send it: a gear CSV export, a bug or misread report, or a screen recording you save to Photos. You choose what to send, and to whom.</p>
+      <p>The app does not automatically send your data to the developer. It contains no analytics tools, crash reporters, advertising networks or third-party kits. Optional iCloud sync and sharing you initiate are described below.</p>
+      <p>One option moves data off the phone, and it is off until you turn it on: iCloud sync, in the Statistics options. With it on, your saved results and gear readings sync through your own private iCloud database to your other iPhones signed in to the same Apple Account. That database is yours; the developer cannot read it. The app's results sync does not include screen or item-panel pictures. Apple's handling of iCloud is covered by Apple's own privacy policy.</p>
+      <p>Exports and reports leave the app only when you choose to share them, including gear CSV files and bug or misread reports. You choose what to send and to whom. Recordings you choose to save to Photos are handled by Photos and may sync through iCloud Photos if you have enabled it in the system; this is separate from the app's optional results sync.</p>
 
       <h3>4. How long it is kept, and how to delete it</h3>
-      <p>Saved results are limited to 1,000 hacks and 1,000 drops, and to 90 days; older records drop off by themselves. Clear results, in the result options, deletes them at once, and single records can be deleted from Statistics. Deleting the app removes everything it stored on the phone. Logs, screenshots and imported files can also be deleted in the Files app.</p>
-      <p>If you turned iCloud sync on, turning it off stops further syncing but does not delete what is already in iCloud; remove that in the iPhone's Settings app, under your name, iCloud, Manage Account Storage. As the developer holds no copy of your data, there is nothing to request from us.</p>
+      <p>Saved results are limited to 1,000 hacks and 1,000 drops, and to 90 days; older records drop off by themselves. Clear results, in the result options, deletes them at once, and single records can be deleted from Statistics. Deleting the app removes everything it stored on the phone. Logs, screenshots and imported files can also be deleted in the Files app. Recordings saved to Photos remain there after you delete the app; manage or delete those recordings separately in Photos.</p>
+      <p>If you turned iCloud sync on, turning it off stops further syncing but does not delete what is already in iCloud; remove that in the iPhone's Settings app, under your name, iCloud, Manage Account Storage. The developer cannot access your private iCloud to delete that data for you.</p>
 
       <h3>5. Withdrawing consent</h3>
       <p>Stop screen sharing at any time, with Stop in the app or from the iOS recording indicator. Each option can be turned off separately in Settings and in the result options: reading results, reading gear, saving panel pictures, keeping results, bug reporting and iCloud sync. iOS permissions can be withdrawn at any time in the iPhone's Settings app under Dynamic Glyph.</p>
@@ -61,6 +68,14 @@
   </main>
 
   <footer>
+    <!-- lang:start -->
+    <ul class="langs" aria-label="Language">
+      <li><span aria-current="true">English</span></li>
+      <li><a href="/ja/privacy/" hreflang="ja" lang="ja">日本語</a></li>
+      <li><a href="/zh-hans/privacy/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+      <li><a href="/zh-hant/privacy/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li>
+    </ul>
+    <!-- lang:end -->
     <ul>
       <li><a href="../">Home</a></li>
       <li><a href="../support/">Support</a></li>

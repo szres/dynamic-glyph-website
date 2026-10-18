@@ -103,14 +103,8 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
 .card p { color: var(--muted); margin: 0 0 0.75rem; max-width: 62ch; }
 .card p:last-child { margin-bottom: 0; }
 
-/* Warning card */
+/* Warning card: same look as the other cards */
 
-.warn {
-  background: var(--warn-bg);
-  box-shadow: var(--shadow);
-  border-left: 4px solid var(--warn-line);
-}
-.warn h2 { color: #8a5a10; }
 .warn strong { color: var(--text); }
 
 /* Contact box */

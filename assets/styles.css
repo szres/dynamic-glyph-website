@@ -1,0 +1,188 @@
+:root {
+  --bg: #0b0e13;
+  --surface: #141922;
+  --line: #222a36;
+  --text: #e9edf4;
+  --muted: #98a3b3;
+  --accent: #7b5cff;
+  --accent-soft: #a893ff;
+  --warn: #f0a33c;
+  --font: -apple-system, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+a { color: var(--accent-soft); }
+a:focus-visible,
+button:focus-visible { outline: 2px solid var(--accent-soft); outline-offset: 3px; border-radius: 4px; }
+
+/* Hero */
+
+.hero { padding: 5.5rem 0 3.5rem; }
+
+.eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 1.75rem;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 7vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  margin: 0 0 1.25rem;
+  max-width: 16ch;
+}
+
+.lede {
+  font-size: 1.15rem;
+  color: var(--muted);
+  margin: 0;
+  max-width: 54ch;
+}
+
+/* Signature element: the slot strip */
+
+.strip {
+  display: flex;
+  gap: 0.5rem;
+  margin: 3rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slot {
+  flex: 1 1 0;
+  height: 3.25rem;
+  max-width: 3.25rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  position: relative;
+}
+
+.slot::after {
+  content: "";
+  position: absolute;
+  inset: 0.85rem;
+  border: 1.5px solid var(--line);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.slot.done::after { border-color: #5a4fa3; }
+.slot.now {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.slot.now::after { border-color: var(--accent-soft); }
+
+/* Sections */
+
+section { padding: 3.5rem 0; border-top: 1px solid var(--line); }
+.hero { border: 0; }
+
+h2 {
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 0 0 2rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 650;
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.01em;
+}
+
+p { max-width: 62ch; }
+
+.points { display: grid; gap: 2rem; }
+.points p { color: var(--muted); margin: 0; }
+
+@media (min-width: 40rem) {
+  .points { grid-template-columns: 1fr 1fr; gap: 2.25rem 2.5rem; }
+}
+
+/* Notice */
+
+.notice {
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--warn);
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.notice h3 { color: var(--warn); }
+.notice p { color: var(--muted); }
+.notice p:last-child { margin-bottom: 0; }
+
+/* Download */
+
+.download p { font-size: 1.05rem; }
+.req { color: var(--muted); font-size: 0.95rem; }
+
+/* Documents (support, privacy) */
+
+.doc h1 { font-size: clamp(1.9rem, 5vw, 2.5rem); max-width: 22ch; }
+.doc section { padding: 2.5rem 0; }
+.doc h2 {
+  font-size: 1.15rem;
+  text-transform: none;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+.doc dt { font-weight: 650; margin-top: 1.75rem; }
+.doc dd { margin: 0.35rem 0 0; color: var(--muted); max-width: 62ch; }
+.doc ul { color: var(--muted); max-width: 62ch; padding-left: 1.1rem; }
+.doc li { margin-bottom: 0.4rem; }
+.doc .muted { color: var(--muted); }
+
+.contact {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.contact p { margin: 0 0 0.5rem; }
+.contact p:last-child { margin-bottom: 0; }
+.contact a { font-weight: 600; }
+
+/* Footer */
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 2.5rem 0 4rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+footer ul { display: flex; flex-wrap: wrap; gap: 1.25rem; list-style: none; padding: 0; margin: 0 0 1rem; }
+footer a { color: var(--muted); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

@@ -68,10 +68,11 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
 .masthead p { margin: 0; color: var(--muted); font-size: 1rem; }
 
 .store {
-  margin: 0.6rem 0 0;
-  font-size: 0.95rem;
-  color: var(--subtle);
+  display: inline-block;
+  margin: 0.75rem 0 0;
+  line-height: 0;
 }
+.store img { height: 40px; width: auto; display: block; }
 
 @media (max-width: 30rem) {
   .mark { width: 4.5rem; height: 4.5rem; }

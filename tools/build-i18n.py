@@ -110,6 +110,7 @@ def main():
             s = head.replace('<html lang="en">', f'<html lang="{HTML_LANG[code]}">') + body
             if code != "en":  # shared files live at the root: one more level up
                 s = re.sub(r'(href|src|srcset)="((?:\.\./)*)assets/', r'\1="../\2assets/', s)
+            s = s.replace("assets/app-store-badge-en.svg", f"assets/app-store-badge-{code}.svg")
             if code in SCREENS:
                 s = s.replace("assets/screens/", "assets/screens/" + SCREENS[code])
             s = put_blocks(s, page, code, t["101"])

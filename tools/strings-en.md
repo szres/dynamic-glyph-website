@@ -9,7 +9,7 @@ Corrections vs Leto's attachment: 6 avoid every-drop accuracy promise; 12 saved 
 1. Dynamic Glyph app icon
 2. Dynamic Glyph for Ingress
 3. Gear drops and hack statistics
-4. Coming soon to the App Store
+4. Download on the App Store (alt text of the App Store badge)
 5. The gear summary: 20 items from today's drops, by type, with the count for each level and rarity.
 6. Your gear, counted
 7. After each hack, the app reads the item panels on your screen and counts the gear shown, by item, level and rarity.

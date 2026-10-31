@@ -21,13 +21,15 @@ PAGES = ["index.html", "support/index.html", "privacy/index.html"]
 LANGS = [("en", "", "English"), ("ja", "ja/", "日本語"),
          ("zh-hans", "zh-hans/", "简体中文"), ("zh-hant", "zh-hant/", "繁體中文")]
 HTML_LANG = {"en": "en", "ja": "ja", "zh-hans": "zh-Hans", "zh-hant": "zh-Hant"}
-SCREENS = {"zh-hans": "zh-hans/"}  # localized captures; others use English ones
+SCREENS = {"zh-hans": "zh-hans/", "ja": "ja/"}  # localized captures; zh-hant uses the English ones
 ELEM = re.compile(r'<(h1|h2|h3|p|li)(\s[^>]*)?>(.*?)</\1>|<img[^>]*alt="([^"]*)"', re.S)
-META_KEYS = {  # page -> (title key, description key)
-    "index.html": (None, 98),
-    "support/index.html": (96, 99),
-    "privacy/index.html": (97, 100),
-}
+# The six head strings follow the body lines: support title, privacy title,
+# the three descriptions, then the switcher label. Their ids depend on how
+# many body lines there are, so they are computed from the translations.
+def meta_keys(total):
+    b = total - 6
+    return {"index.html": (None, b + 3), "support/index.html": (b + 1, b + 4),
+            "privacy/index.html": (b + 2, b + 5)}, b + 6
 
 
 def md_to_html(t):
@@ -76,6 +78,7 @@ def main():
         todo = [LANGS[0]] + todo
     for code, prefix, _ in todo:
         t = tr[code]
+        META_KEYS, LABEL = meta_keys(len(t))
         n = 0
         for page in PAGES:
             s = open(os.path.join(ROOT, page)).read()
@@ -113,7 +116,7 @@ def main():
             s = s.replace("assets/app-store-badge-en.svg", f"assets/app-store-badge-{code}.svg")
             if code in SCREENS:
                 s = s.replace("assets/screens/", "assets/screens/" + SCREENS[code])
-            s = put_blocks(s, page, code, t["101"])
+            s = put_blocks(s, page, code, t[str(LABEL)])
             out = os.path.join(ROOT, prefix, page)
             os.makedirs(os.path.dirname(out), exist_ok=True)
             open(out, "w").write(s)

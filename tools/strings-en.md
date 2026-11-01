@@ -35,79 +35,83 @@ Corrections vs Leto's attachment: 6 avoid every-drop accuracy promise; 12 saved 
 27. An iPhone running iOS 18 or later.
 28. Ingress, installed and signed in. It is a separate app and is not included.
 29. For Glyph assistance, your own Glyph list file; for predictions, your own sequence list too. Counting gear needs neither.
-30. [Support](support/)
-31. [Privacy](privacy/)
-32. [GitHub](https://github.com/szres/dynamic-glyph)
-33. © 2026 LIZI LUO. All rights reserved.
-34. This app is not affiliated with or endorsed by Niantic Spatial, Inc. Ingress is a trademark of Niantic Spatial, Inc.
-35. Dynamic Glyph app icon
-36. Dynamic Glyph
-37. Support
-38. Support
-39. Dynamic Glyph reads a Glyph hack from your own iPhone screen and keeps the sequence in view while you draw.
-40. **Email:** [dynamic-glyph@szres.org](mailto:dynamic-glyph@szres.org)
-41. **Telegram:** [@Dynamic_Glyph](https://t.me/Dynamic_Glyph)
-42. Expect a reply within three business days. Writing from the app, under Get support in Settings, fills in the address for you.
-43. Frequently asked questions
-44. Do I need a Glyph list?
-45. No. Dynamic Glyph counts the gear each hack drops without any files. Glyph assistance is optional. It shows each Glyph hack's sequence while you draw, and it needs your own Glyph list (glyph_line.csv). To add it, open Settings, go to Glyph data at the bottom and tap Add Glyph list. You can also put the file in Dynamic Glyph's folder in the Files app. After your first import, the Glyph assistance switch appears in Settings, already on. Turn it off any time to go back to counting gear only.
-46. Nothing shows in the Dynamic Island.
-47. Live Activities have to be on for the app: open the iPhone's Settings app, find Dynamic Glyph, and turn them on. On iOS 18 to 26 the Island cannot be used on its own — the floating window has to stay open for the app to keep reading.
-48. The floating window is in the way.
-49. Pinch it to resize, drag it to move it, or tuck it against the side of the screen. Keep it clear of the slot row at the top of the game: that row is where the app reads the sequence from.
-50. Does it work without Ingress?
-51. No. Live recognition reads what the game draws on your screen, so Ingress has to be installed and running. Dynamic Glyph does not communicate with the game or a developer-operated server. Optional private iCloud sync is separate; it is off by default. You can review saved results without the game running.
-52. Where are my results, and how do I delete them?
-53. In Statistics, on the phone. The app keeps up to 1,000 hacks and 1,000 drops for 90 days. Clear results, in the result options, deletes them; single rows can be deleted from Select mode; Export writes a CSV you can keep.
-54. The item counts look wrong.
-55. Gear is read from the panels the game shows after a hack, and a panel that is covered or scrolled past can be missed. Open that drop and tap Report this reading… to create a report with the reading and its picture. You choose whether and how to share it; nothing is sent automatically.
-56. What you need
-57. An iPhone running iOS 18 or later.
-58. Ingress, installed and signed in. It is a separate app and is not included.
-59. For Glyph assistance, your own Glyph list file; for predictions, your own sequence list too. For counting gear, nothing extra.
-60. For the Dynamic Island display, an iPhone that has one, with Live Activities on.
-61. [Home](../)
-62. [Privacy](../privacy/)
-63. [GitHub](https://github.com/szres/dynamic-glyph)
-64. © 2026 LIZI LUO. All rights reserved.
-65. This app is not affiliated with or endorsed by Niantic Spatial, Inc. Ingress is a trademark of Niantic Spatial, Inc.
-66. Dynamic Glyph app icon
-67. Dynamic Glyph
-68. Privacy Policy
-69. Privacy Policy
-70. Effective 31 October 2026
-71. Dynamic Glyph collects nothing. The app has no server, no account and no analytics. Screen processing happens on your iPhone, and the app opens no network connection of its own. The one exception is optional iCloud sync, off until you turn it on, which sends saved results and gear readings to your private iCloud.
-72. 1. What the app reads and keeps
-73. While it is running, the app reads your screen through iOS screen sharing, which you start yourself and which keeps the system recording indicator visible the whole time. Frames are examined in memory and discarded after processing. Saving results, panel pictures, session logs or screenshots depends on the options below. If you turn on saving a recording to Photos before a session, the app also saves a screen video to Photos; it may show anything visible on your screen, including the game map.
-74. **Hack results and gear readings**, saved on the phone: the Glyphs and bonuses the game showed, which Glyphs it accepted, timings, portal level and faction, your own faction if you set it in Settings (it also goes into gear exports), the items read from each drop, and a note of the app version, capture mode, game language and your time zone offset. No portal names, player names, addresses or location are stored in these records.
-75. **Pictures of the game's item panels**, saved on the phone with each gear reading. You can switch this off in the result options.
-76. **A summary for the Home Screen widget**, kept on the phone in a folder that only the app and its widget share. It holds hack counts, bonus averages and item totals by item and level, for the last 15 days and in total, plus your time zone name so that Today starts at midnight. It contains numbers only, never pictures, names or places. It is never synced to iCloud, and it is rebuilt after every change, so deleted results disappear from it too. The Control Center switch only leaves small start and stop requests in the same folder.
-77. **Session logs and screenshots**, written only if you turn on bug reporting in Settings. Those screenshots can show anything on screen at the time, including your position on the game map.
-78. **Glyph and sequence files you import**, stored in the app's own folder, which you can browse and delete in the Files app.
-79. The app asks for screen sharing, permission to add to Photos (it never reads your library), local notifications, and Live Activities. It never asks for the camera, the microphone, your location, your contacts, or tracking.
-80. 2. What it is used for
-81. Only what you asked for: recognising the hack as it happens, showing the sequence in the floating window and the Dynamic Island, counting what each hack dropped, and showing your own history in Statistics. Recognition runs entirely on the iPhone, using Apple's on-device tools. There is no profiling, no advertising and no tracking of any kind. Shortcuts and Siri run the app's own Start, Stop and Open Statistics actions, and the app stores nothing for them. Siri's handling of what you say is covered by Apple's privacy policy.
-82. 3. Who else sees it
-83. The app does not automatically send your data to the developer. It contains no analytics tools, crash reporters, advertising networks or third-party kits. Optional iCloud sync and sharing you initiate are described below.
-84. One option moves data off the phone, and it is off until you turn it on: iCloud sync, in the Statistics options. With it on, your saved results and gear readings sync through your own private iCloud database to your other iPhones signed in to the same Apple Account. That database is yours; the developer cannot read it. The app's results sync does not include screen or item-panel pictures. Apple's handling of iCloud is covered by Apple's own privacy policy.
-85. Exports and reports leave the app only when you choose to share them, including gear CSV files and bug or misread reports. You choose what to send and to whom. Recordings you choose to save to Photos are handled by Photos and may sync through iCloud Photos if you have enabled it in the system; this is separate from the app's optional results sync.
-86. 4. How long it is kept, and how to delete it
-87. Saved results are limited to 1,000 hacks and 1,000 drops, and to 90 days; older records drop off by themselves. Clear results, in the result options, deletes them at once, and single records can be deleted from Statistics. Deleting the app removes everything it stored on the phone. Logs, screenshots and imported files can also be deleted in the Files app. Recordings saved to Photos remain there after you delete the app; manage or delete those recordings separately in Photos.
-88. If you turned iCloud sync on, turning it off stops further syncing but does not delete what is already in iCloud; remove that in the iPhone's Settings app, under your name, iCloud, Manage Account Storage. The developer cannot access your private iCloud to delete that data for you.
-89. 5. Withdrawing consent
-90. Stop screen sharing at any time, with Stop in the app or from the iOS recording indicator. Each option can be turned off separately in Settings and in the result options: reading results, reading gear, saving panel pictures, keeping results, bug reporting and iCloud sync. iOS permissions can be withdrawn at any time in the iPhone's Settings app under Dynamic Glyph.
-91. 6. Children, changes and contact
-92. The app is not directed at children, and it collects no data from anyone.
-93. If this policy changes, the new version appears on this page with a new effective date.
-94. Questions about privacy: [dynamic-glyph@szres.org](mailto:dynamic-glyph@szres.org).
-95. [Home](../)
-96. [Support](../support/)
-97. [GitHub](https://github.com/szres/dynamic-glyph)
-98. © 2026 LIZI LUO. All rights reserved.
-99. This app is not affiliated with or endorsed by Niantic Spatial, Inc. Ingress is a trademark of Niantic Spatial, Inc.
-100. Support — Dynamic Glyph
-101. Privacy Policy — Dynamic Glyph
-102. Dynamic Glyph reads the item panels after each Ingress hack, counts the gear you got, and keeps your hack statistics on your iPhone.
-103. Support for Dynamic Glyph: how to reach us, and answers to the questions players ask most.
-104. Dynamic Glyph collects no data. What it reads and what it keeps stay on your iPhone, with optional sync to your own private iCloud.
-105. Language
+30. Source code
+31. The code for Dynamic Glyph is public on GitHub. You're free to use it, change it and share your own version, as long as you don't make money from it and your version has its own name and icon.
+32. [View on GitHub](https://github.com/szres/dynamic-glyph)
+33. License: PolyForm Noncommercial 1.0.0
+34. [Support](support/)
+35. [Privacy](privacy/)
+36. [GitHub](https://github.com/szres/dynamic-glyph)
+37. © 2026 LIZI LUO. All rights reserved.
+38. This app is not affiliated with or endorsed by Niantic Spatial, Inc. Ingress is a trademark of Niantic Spatial, Inc.
+39. Dynamic Glyph app icon
+40. Dynamic Glyph
+41. Support
+42. Support
+43. Dynamic Glyph reads a Glyph hack from your own iPhone screen and keeps the sequence in view while you draw.
+44. **Email:** [dynamic-glyph@szres.org](mailto:dynamic-glyph@szres.org)
+45. **Telegram:** [@Dynamic_Glyph](https://t.me/Dynamic_Glyph)
+46. Expect a reply within three business days. Writing from the app, under Get support in Settings, fills in the address for you.
+47. Frequently asked questions
+48. Do I need a Glyph list?
+49. No. Dynamic Glyph counts the gear each hack drops without any files. Glyph assistance is optional. It shows each Glyph hack's sequence while you draw, and it needs your own Glyph list (glyph_line.csv). To add it, open Settings, go to Glyph data at the bottom and tap Add Glyph list. You can also put the file in Dynamic Glyph's folder in the Files app. After your first import, the Glyph assistance switch appears in Settings, already on. Turn it off any time to go back to counting gear only.
+50. Nothing shows in the Dynamic Island.
+51. Live Activities have to be on for the app: open the iPhone's Settings app, find Dynamic Glyph, and turn them on. On iOS 18 to 26 the Island cannot be used on its own — the floating window has to stay open for the app to keep reading.
+52. The floating window is in the way.
+53. Pinch it to resize, drag it to move it, or tuck it against the side of the screen. Keep it clear of the slot row at the top of the game: that row is where the app reads the sequence from.
+54. Does it work without Ingress?
+55. No. Live recognition reads what the game draws on your screen, so Ingress has to be installed and running. Dynamic Glyph does not communicate with the game or a developer-operated server. Optional private iCloud sync is separate; it is off by default. You can review saved results without the game running.
+56. Where are my results, and how do I delete them?
+57. In Statistics, on the phone. The app keeps up to 1,000 hacks and 1,000 drops for 90 days. Clear results, in the result options, deletes them; single rows can be deleted from Select mode; Export writes a CSV you can keep.
+58. The item counts look wrong.
+59. Gear is read from the panels the game shows after a hack, and a panel that is covered or scrolled past can be missed. Open that drop and tap Report this reading… to create a report with the reading and its picture. You choose whether and how to share it; nothing is sent automatically.
+60. What you need
+61. An iPhone running iOS 18 or later.
+62. Ingress, installed and signed in. It is a separate app and is not included.
+63. For Glyph assistance, your own Glyph list file; for predictions, your own sequence list too. For counting gear, nothing extra.
+64. For the Dynamic Island display, an iPhone that has one, with Live Activities on.
+65. [Home](../)
+66. [Privacy](../privacy/)
+67. [GitHub](https://github.com/szres/dynamic-glyph)
+68. © 2026 LIZI LUO. All rights reserved.
+69. This app is not affiliated with or endorsed by Niantic Spatial, Inc. Ingress is a trademark of Niantic Spatial, Inc.
+70. Dynamic Glyph app icon
+71. Dynamic Glyph
+72. Privacy Policy
+73. Privacy Policy
+74. Effective 31 October 2026
+75. Dynamic Glyph collects nothing. The app has no server, no account and no analytics. Screen processing happens on your iPhone, and the app opens no network connection of its own. The one exception is optional iCloud sync, off until you turn it on, which sends saved results and gear readings to your private iCloud.
+76. 1. What the app reads and keeps
+77. While it is running, the app reads your screen through iOS screen sharing, which you start yourself and which keeps the system recording indicator visible the whole time. Frames are examined in memory and discarded after processing. Saving results, panel pictures, session logs or screenshots depends on the options below. If you turn on saving a recording to Photos before a session, the app also saves a screen video to Photos; it may show anything visible on your screen, including the game map.
+78. **Hack results and gear readings**, saved on the phone: the Glyphs and bonuses the game showed, which Glyphs it accepted, timings, portal level and faction, your own faction if you set it in Settings (it also goes into gear exports), the items read from each drop, and a note of the app version, capture mode, game language and your time zone offset. No portal names, player names, addresses or location are stored in these records.
+79. **Pictures of the game's item panels**, saved on the phone with each gear reading. You can switch this off in the result options.
+80. **A summary for the Home Screen widget**, kept on the phone in a folder that only the app and its widget share. It holds hack counts, bonus averages and item totals by item and level, for the last 15 days and in total, plus your time zone name so that Today starts at midnight. It contains numbers only, never pictures, names or places. It is never synced to iCloud, and it is rebuilt after every change, so deleted results disappear from it too. The Control Center switch only leaves small start and stop requests in the same folder.
+81. **Session logs and screenshots**, written only if you turn on bug reporting in Settings. Those screenshots can show anything on screen at the time, including your position on the game map.
+82. **Glyph and sequence files you import**, stored in the app's own folder, which you can browse and delete in the Files app.
+83. The app asks for screen sharing, permission to add to Photos (it never reads your library), local notifications, and Live Activities. It never asks for the camera, the microphone, your location, your contacts, or tracking.
+84. 2. What it is used for
+85. Only what you asked for: recognising the hack as it happens, showing the sequence in the floating window and the Dynamic Island, counting what each hack dropped, and showing your own history in Statistics. Recognition runs entirely on the iPhone, using Apple's on-device tools. There is no profiling, no advertising and no tracking of any kind. Shortcuts and Siri run the app's own Start, Stop and Open Statistics actions, and the app stores nothing for them. Siri's handling of what you say is covered by Apple's privacy policy.
+86. 3. Who else sees it
+87. The app does not automatically send your data to the developer. It contains no analytics tools, crash reporters, advertising networks or third-party kits. Optional iCloud sync and sharing you initiate are described below.
+88. One option moves data off the phone, and it is off until you turn it on: iCloud sync, in the Statistics options. With it on, your saved results and gear readings sync through your own private iCloud database to your other iPhones signed in to the same Apple Account. That database is yours; the developer cannot read it. The app's results sync does not include screen or item-panel pictures. Apple's handling of iCloud is covered by Apple's own privacy policy.
+89. Exports and reports leave the app only when you choose to share them, including gear CSV files and bug or misread reports. You choose what to send and to whom. Recordings you choose to save to Photos are handled by Photos and may sync through iCloud Photos if you have enabled it in the system; this is separate from the app's optional results sync.
+90. 4. How long it is kept, and how to delete it
+91. Saved results are limited to 1,000 hacks and 1,000 drops, and to 90 days; older records drop off by themselves. Clear results, in the result options, deletes them at once, and single records can be deleted from Statistics. Deleting the app removes everything it stored on the phone. Logs, screenshots and imported files can also be deleted in the Files app. Recordings saved to Photos remain there after you delete the app; manage or delete those recordings separately in Photos.
+92. If you turned iCloud sync on, turning it off stops further syncing but does not delete what is already in iCloud; remove that in the iPhone's Settings app, under your name, iCloud, Manage Account Storage. The developer cannot access your private iCloud to delete that data for you.
+93. 5. Withdrawing consent
+94. Stop screen sharing at any time, with Stop in the app or from the iOS recording indicator. Each option can be turned off separately in Settings and in the result options: reading results, reading gear, saving panel pictures, keeping results, bug reporting and iCloud sync. iOS permissions can be withdrawn at any time in the iPhone's Settings app under Dynamic Glyph.
+95. 6. Children, changes and contact
+96. The app is not directed at children, and it collects no data from anyone.
+97. If this policy changes, the new version appears on this page with a new effective date.
+98. Questions about privacy: [dynamic-glyph@szres.org](mailto:dynamic-glyph@szres.org).
+99. [Home](../)
+100. [Support](../support/)
+101. [GitHub](https://github.com/szres/dynamic-glyph)
+102. © 2026 LIZI LUO. All rights reserved.
+103. This app is not affiliated with or endorsed by Niantic Spatial, Inc. Ingress is a trademark of Niantic Spatial, Inc.
+104. Support — Dynamic Glyph
+105. Privacy Policy — Dynamic Glyph
+106. Dynamic Glyph reads the item panels after each Ingress hack, counts the gear you got, and keeps your hack statistics on your iPhone.
+107. Support for Dynamic Glyph: how to reach us, and answers to the questions players ask most.
+108. Dynamic Glyph collects no data. What it reads and what it keeps stay on your iPhone, with optional sync to your own private iCloud.
+109. Language

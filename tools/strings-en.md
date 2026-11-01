@@ -37,11 +37,11 @@ Corrections vs Leto's attachment: 6 avoid every-drop accuracy promise; 12 saved 
 29. For Glyph assistance, your own Glyph list file; for predictions, your own sequence list too. Counting gear needs neither.
 30. Source code
 31. The code for Dynamic Glyph is public on GitHub. You're free to use it, change it and share your own version, as long as you don't make money from it and your version has its own name and icon.
-32. [View on GitHub](https://github.com/szres/dynamic-glyph)
+32. [View on GitHub](https://github.com/ChestnutLUO/Dynamic-Glyph)
 33. License: PolyForm Noncommercial 1.0.0
 34. [Support](support/)
 35. [Privacy](privacy/)
-36. [GitHub](https://github.com/szres/dynamic-glyph)
+36. [GitHub](https://github.com/ChestnutLUO/Dynamic-Glyph)
 37. © 2026 LIZI LUO. All rights reserved.
 38. This app is not affiliated with or endorsed by Niantic Spatial, Inc. Ingress is a trademark of Niantic Spatial, Inc.
 39. Dynamic Glyph app icon
@@ -72,7 +72,7 @@ Corrections vs Leto's attachment: 6 avoid every-drop accuracy promise; 12 saved 
 64. For the Dynamic Island display, an iPhone that has one, with Live Activities on.
 65. [Home](../)
 66. [Privacy](../privacy/)
-67. [GitHub](https://github.com/szres/dynamic-glyph)
+67. [GitHub](https://github.com/ChestnutLUO/Dynamic-Glyph)
 68. © 2026 LIZI LUO. All rights reserved.
 69. This app is not affiliated with or endorsed by Niantic Spatial, Inc. Ingress is a trademark of Niantic Spatial, Inc.
 70. Dynamic Glyph app icon
@@ -106,7 +106,7 @@ Corrections vs Leto's attachment: 6 avoid every-drop accuracy promise; 12 saved 
 98. Questions about privacy: [dynamic-glyph@szres.org](mailto:dynamic-glyph@szres.org).
 99. [Home](../)
 100. [Support](../support/)
-101. [GitHub](https://github.com/szres/dynamic-glyph)
+101. [GitHub](https://github.com/ChestnutLUO/Dynamic-Glyph)
 102. © 2026 LIZI LUO. All rights reserved.
 103. This app is not affiliated with or endorsed by Niantic Spatial, Inc. Ingress is a trademark of Niantic Spatial, Inc.
 104. Support — Dynamic Glyph

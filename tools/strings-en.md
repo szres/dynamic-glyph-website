@@ -55,7 +55,7 @@ Corrections vs Leto's attachment: 6 avoid every-drop accuracy promise; 12 saved 
 47. Expect a reply within three business days. Writing from the app, under Get support in Settings, fills in the address for you.
 48. Frequently asked questions
 49. Do I need a Glyph list?
-50. No. Dynamic Glyph counts the gear each hack drops without any files. Glyph assistance is optional. It shows each Glyph hack's sequence while you draw, and it needs your own Glyph list (glyph_line.csv). To add it, open Settings, go to Glyph data at the bottom and tap Add Glyph list. You can also put the file in Dynamic Glyph's folder in the Files app. After your first import, the Glyph assistance switch appears in Settings, already on. Turn it off any time to go back to counting gear only.
+50. No. Dynamic Glyph counts the gear each hack drops without any files. Glyph assistance is optional. It shows each Glyph hack's sequence while you draw, and it needs your own Glyph list (glyph_line.csv). To add it, open Settings, tap Glyph data near the top and then Add Glyph list. You can also put the file in Dynamic Glyph's folder in the Files app. After your first import, the Glyph assistance switch appears at the top of Settings, already on. Turn it off any time to go back to counting gear only.
 51. Nothing shows in the Dynamic Island.
 52. Live Activities have to be on for the app: open the iPhone's Settings app, find Dynamic Glyph, and turn them on. On iOS 18 to 26 the Island cannot be used on its own — the floating window has to stay open for the app to keep reading.
 53. The floating window is in the way.
